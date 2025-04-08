@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: Coming Soon
+- Live Site URL: [Click Here](https://rhinzz.github.io/Product-Preview-Card-Component/)
 
 ## My process
 
