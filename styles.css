@@ -1,0 +1,174 @@
+:root {
+    --cream: hsl(30, 38%, 92%);
+    --darkcyan: hsl(158, 36%, 37%);
+    --white: hsl(0, 0%, 100%);
+    --verydarkblue: hsl(212, 21%, 14%);
+    --darkgrayishblue: hsl(228, 12%, 48%);
+    --paddingX: 1.8rem;
+    --paddingY: 1.8rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: var(--darkgrayishblue);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.25rem;
+    padding: 0.5em 1em 1em 0;
+}
+
+.btn {
+    background-color: var(--darkcyan);
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    display: block;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: hsl(156, 42%, 18%);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: hsl(156, 42%, 18%);
+    cursor: pointer;
+}
+
+.btn img {
+    margin-right: 0.75rem;
+}
+
+.type {
+    color: var(--darkgrayishblue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 1;
+    padding: 0 0 1.25em 0;
+    margin: 0;
+}
+
+.txt {
+    padding: 0;
+    margin: 0
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 37.5rem;
+    margin: 0.75rem;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-box {
+    padding: var(--paddingX) var(--paddingY);
+}
+
+.prc {
+    display: flex;
+    gap: 1rem;
+}
+
+.prc-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price1 {
+    color: var(--darkcyan);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.price2 {
+    color: var(--darkgrayishblue);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+}
+
+.attribution {
+    font-size: 11px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    border: none;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width:640px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        display: block;
+        margin: 1rem;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
